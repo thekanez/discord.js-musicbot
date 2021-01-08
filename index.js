@@ -19,7 +19,11 @@ client.queue = new Map();
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
-    client.user.setActivity("+help | MUSIC BOT",{type: "WATCHING"}) 
+      client.user.setActivity("!help, !info", {
+      type:"STREAMING",
+      url: "https://www.twitch.tv/scurven"
+  });
+    
 })
 
 client.on("message", async message => {
